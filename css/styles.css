@@ -1,0 +1,641 @@
+    /* global styling */
+    
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        position: relative;
+    }
+    /*specifing all headings on website */
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+    /* section bgcolor */
+    
+    .bg-gray {
+        background: #f7f7f7;
+    }
+    
+    .text-sub {
+        font-size: calc(1rem + 1vw);
+    }
+    /* end global */
+    /* start navbar */
+    
+    .navbar-toggler {
+        border: none !important;
+        box-shadow: none !important;
+    }
+    
+    .navbar-toggler:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+    /* When the navbar is open in the mobile */
+    
+    #navbar-example2 .collapse.show {
+        background-color: white;
+        padding: 10px 20px;
+        transition: background-color 0.3s ease;
+    }
+    /* The color of the links inside the open collapse */
+    
+    #navbar-example2 .collapse.show .nav-link {
+        color: black !important;
+    }
+    /* The line below the link */
+    
+    #navbar-example2 .collapse.show .nav-link::after {
+        background-color: black;
+    }
+    
+    .navbar-toggler-icon {
+        background-image: url(../imgs/imgs/bars-solid\ \(1\).svg);
+    }
+    
+    #navbar-example2.scrolled .navbar-toggler-icon {
+        background-image: url(../imgs/bars-solid\ \(1\).svg);
+    }
+    
+    #navbar-example2 {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        padding: 15px 0!important;
+        background-color: transparent;
+        transition: background-color 0.3s ease, position 0.3s ease;
+        z-index: 999;
+    }
+    
+    #navbar-example2.scrolled {
+        position: fixed;
+        background-color: white;
+        padding: 5px 0!important;
+        color: black;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+    }
+    
+    #navbar-example2.scrolled .navbar-brand {
+        font-family: "Montserrat", sans-serif!important;
+        color: black !important;
+        letter-spacing: 1px;
+    }
+    
+    #navbar-example2 .navbar-brand {
+        color: white !important;
+        font-family: "Montserrat", sans-serif!important;
+        letter-spacing: 1px;
+    }
+    
+    .navbar-nav .nav-link {
+        position: relative;
+        display: inline-block;
+        padding: 12px 10px!important;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    
+    .navbar-nav .nav-link::after {
+        content: '';
+        position: absolute;
+        left: 4px;
+        bottom: 0;
+        height: 2px;
+        width: 0;
+        background-color: white;
+        transition: width 0.3s ease;
+    }
+    
+    .navbar-nav .nav-link:hover::after {
+        width: 80%;
+    }
+    
+    .navbar-nav .nav-link.active::after {
+        width: 80%;
+    }
+    
+    #navbar-example2.scrolled .navbar-nav .nav-link::after {
+        background-color: black;
+    }
+    
+    #navbar-example2.scrolled .nav-link {
+        color: black !important;
+    }
+    
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show {
+        color: white!important;
+    }
+    /* end navbar */
+    /* start about */
+    
+    #home {
+        height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../imgs/imgs/bg.jpg);
+        background-size: cover;
+        background-position: center center;
+        padding-top: 100px;
+    }
+    
+    .hello-txt {
+        font-size: 50px;
+        font-weight: 800;
+        line-height: 55px;
+    }
+    
+    #typing {
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 72px;
+    }
+    
+    .fixed-text {
+        font-size: 60px;
+        font-weight: 200;
+        line-height: 72px;
+        padding: 12px 0;
+    }
+    
+    .ico-circle {
+        width: 35px;
+        height: 35px;
+    }
+    /* end home */
+    /* start about */
+    
+    .hero-img {
+        padding: 0 0 0 30px;
+    }
+    
+    .hero-img:after {
+        content: "";
+        width: 80%;
+        height: 80%;
+        position: absolute;
+        left: 0px;
+        bottom: -30px;
+        background-image: url(../imgs/imgs/dots.png);
+        background-repeat: repeat;
+        z-index: -1;
+    }
+    
+    .hero-content h3 {
+        font-size: 30px;
+        font-weight: 800;
+        margin-bottom: 5px;
+        color: rgba(52, 52, 52, 1)
+    }
+    
+    .hero-content .title {
+        font-size: 15px;
+        letter-spacing: 2px;
+        color: rgba(153, 153, 153, 1);
+    }
+    
+    .hero-content p {
+        font-size: 15px;
+        line-height: 24px;
+        margin: 0;
+        font-weight: 400;
+        color: #748182;
+    }
+    
+    #about .abt-btn {
+        border-radius: 5px;
+    }
+    
+    #about .download-btn a {
+        color: white;
+        font-size: 15px;
+        transition: all 0.5s ease;
+    }
+    
+    #about .download-btn {
+        background-color: black;
+        padding: 10px 24px;
+        transition: all 0.5s ease;
+    }
+    
+    #about .download-btn:hover a {
+        color: grey;
+    }
+    
+    #about .download-btn:hover {
+        background-color: white;
+        border: 2px solid grey;
+    }
+    
+    #about .contact-btn a {
+        color: grey;
+        font-size: 15px;
+        transition: all 0.5s ease;
+    }
+    
+    #about .contact-btn {
+        background-color: white;
+        padding: 10px 24px;
+        border: 2px solid grey;
+        transition: all 0.5s ease;
+    }
+    
+    #about .contact-btn:hover a {
+        color: white;
+    }
+    
+    #about .contact-btn:hover {
+        background-color: black;
+        border: none;
+    }
+    /* end about */
+    /* start services */
+    
+    .section-header {
+        font-size: 40px;
+        font-weight: 900;
+        color: rgba(52, 52, 52, 1);
+        position: relative;
+        display: inline-block;
+        z-index: 4;
+    }
+    
+    .section-header:after {
+        content: "";
+        width: 100%;
+        height: 30px;
+        background-image: url(../imgs/imgs/dots.png);
+        background-repeat: repeat;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        z-index: -1;
+    }
+    /* end about */
+    /* start services */
+    
+    .service-card {
+        -webkit-box-shadow: 0px 6px 15px -13px rgba(66, 68, 90, 1);
+        -moz-box-shadow: 0px 6px 15px -13px rgba(66, 68, 90, 1);
+        box-shadow: 0px 6px 15px -13px rgba(66, 68, 90, 1);
+        border-radius: 5px;
+    }
+    
+    .service-card .icon-container {
+        width: 65px;
+        height: 65px;
+        transition: all 1s ease;
+    }
+    
+    .service-card h6 {
+        color: rgba(52, 52, 52, 1);
+        font-size: 18px;
+        font-weight: 800;
+    }
+    
+    .service-card p {
+        color: rgba(116, 129, 130, 1);
+        font-size: 14px;
+        font-weight: 400;
+    }
+    
+    .service-card:hover .icon-container {
+        background-color: black;
+        color: white;
+    }
+    /* end services */
+    /* start portfolio */
+    
+    #work .nav .nav-link {
+        position: relative;
+        display: inline-block;
+        transition: all 0.3s ease;
+        padding: 5px 15px !important;
+        color: black;
+        font-size: 16px;
+        text-transform: capitalize;
+        font-weight: 700;
+    }
+    
+    #work .nav .nav-link::after {
+        content: '';
+        position: absolute;
+        left: 4px;
+        bottom: 0;
+        height: 2px;
+        width: 0;
+        background-color: black;
+        transition: width 0.3s ease;
+    }
+    
+    #work .nav .nav-link:hover::after {
+        width: 80%;
+    }
+    
+    #work .nav .nav-link.active::after {
+        width: 80%;
+    }
+    
+    #work .nav .nav-link:hover {
+        color: black !important;
+    }
+    
+    .nav-link.active,
+    .show>.nav-link {
+        color: black !important;
+    }
+    
+    #work .layer {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        opacity: 0;
+        background-color: rgba(255, 255, 255, 0.909);
+        transition: all 0.8s ease;
+    }
+    
+    #work .img-container:hover .layer {
+        opacity: 1;
+    }
+    
+    #work .layer-content h6 {
+        margin-bottom: 15px;
+        font-size: 12px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        text-transform: capitalize;
+        transform: translateY(-15px);
+        transition: all 0.4s ease-in;
+    }
+    
+    #work .layer-content .ico-container {
+        transform: translateY(15px);
+        transition: all 0.4s ease-in;
+    }
+    /*  */
+    
+    #work .img-container:hover h6 {
+        transform: translateY(0);
+    }
+    
+    #work .img-container:hover .ico-container {
+        transform: translateY(0);
+    }
+    /*  */
+    
+    #work .ico-circle {
+        transition: all 0.5s ease-out;
+    }
+    
+    #work .ico-circle:hover {
+        background-color: white!important;
+        border: 2px solid black;
+    }
+    
+    #work .ico-circle i {
+        transition: all 0.5s ease-out;
+    }
+    
+    #work .ico-circle:hover i {
+        color: black!important;
+    }
+    /* end work */
+    /* start clients */
+    
+    .client-post p {
+        font-size: 15px;
+        word-spacing: 2px;
+        color: rgba(116, 129, 130, 1);
+        font-weight: 400;
+    }
+    
+    .client-bottom span {
+        font-size: 12px;
+        color: rgba(116, 129, 130, 1);
+        font-weight: 600;
+    }
+    
+    .carousel-indicators {
+        position: absolute;
+        right: 0;
+        bottom: -35px;
+        left: 0;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin-right: 15%;
+        margin-bottom: 1rem;
+        margin-left: 15%;
+    }
+    
+    .carousel-indicators [data-bs-target] {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #bdbdbd;
+        opacity: 0.5;
+        transition: opacity 0.3s;
+        border: none;
+        margin: 0 4px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .carousel-indicators [data-bs-target]:hover {
+        background-color: #535252;
+        opacity: 1;
+        cursor: pointer;
+    }
+    
+    .carousel-indicators .active {
+        opacity: 1;
+        background-color: #535252;
+        /*active indicator color*/
+    }
+    /* end clients  */
+    /* start count */
+    
+    #count .count-item .counter {
+        font-size: 30px;
+        font-weight: 900;
+        color: rgba(52, 52, 52, 1);
+    }
+    
+    #count .count-item .counter-description {
+        font-size: 15px;
+        font-weight: 600;
+        color: rgb(116, 129, 130);
+    }
+    /* end count */
+    /* start team */
+    
+    .card .card-body {
+        background-color: #5b5b5b;
+        color: white;
+    }
+    
+    .card .card-body h4 {
+        font-size: 25px;
+        font-weight: 500;
+    }
+    
+    .card .card-body h5 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    .card .card-img .layer {
+        position: absolute;
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+        top: 12px;
+        opacity: 0;
+        background-color: rgba(255, 255, 255, 0.929);
+        transition: all 0.5s ease;
+    }
+    
+    .card .card-img .layer .social-circle {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        color: white;
+        border-radius: 50%;
+        border: 1px solid transparent;
+        transition: all 0.5s ease;
+        transform: rotateY(180deg);
+    }
+    
+    .card .card-img .layer .social-circle:hover {
+        background-color: rgb(255, 255, 255);
+        border: 1px solid black;
+        color: black;
+    }
+    
+    .card:hover .layer {
+        transform: rotateY(180deg);
+        opacity: 1;
+    }
+    
+    .card .card-img {
+        transition: all 0.5s ease;
+    }
+    
+    .card .card-img:hover {
+        transform: scale(1.04);
+    }
+    /* end team */
+    /* 
+    
+    
+    
+    */
+    /* start contact */
+    
+    .contact-item .social-circle {
+        display: inline-block;
+        width: 55px;
+        height: 55px;
+        background-color: #e1dfdf;
+        color: black;
+        border-radius: 50%;
+        transition: all 0.5s ease;
+    }
+    
+    .contact-item:hover .social-circle {
+        background-color: black;
+        color: #e1dfdf;
+    }
+    
+    .contact-item h6 {
+        font-size: 16px;
+        font-weight: 700;
+        color: rgba(52, 52, 52, 1);
+    }
+    
+    .contact-item p {
+        font-size: 15px;
+        color: rgba(116, 129, 130, 1)
+    }
+    
+    #contacts input {
+        background: #f4f4f4;
+        border: 0;
+    }
+    
+    #contacts input,
+    #contacts textarea {
+        background: #f4f4f4;
+        border: none !important;
+        box-shadow: none !important;
+        border-radius: 5px!important;
+        padding: 10px;
+    }
+    
+    #contacts input:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+    
+    #contacts textarea:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+    
+    #contacts .btn {
+        background-color: black;
+        color: white;
+        border: 1px solid transparent;
+        padding: 6px 30px;
+        font-size: 14px;
+        font-weight: 400;
+        transition: all 0.5s ease;
+    }
+    
+    #contacts .btn:hover {
+        color: black;
+        background-color: white;
+        border-color: black;
+    }
+    /* end contact */
+    /* start footer */
+    
+    footer p {
+        font-size: 13px;
+        font-weight: 400;
+        word-spacing: 2px;
+    }
+    /* end footer */
+    
+    @media (max-width: 767.98px) {
+        #typing {
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 72px;
+        }
+        .fixed-text {
+            font-size: 35px;
+            font-weight: 200;
+            line-height: 72px;
+            padding: 12px 0;
+        }
+    }
